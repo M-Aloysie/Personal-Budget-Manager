@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.7720f2fa.css",
-    "main.js": "/static/js/main.f69a60e8.js",
-    "index.html": "/index.html",
-    "main.7720f2fa.css.map": "/static/css/main.7720f2fa.css.map",
-    "main.f69a60e8.js.map": "/static/js/main.f69a60e8.js.map"
+    "main.css": "/Personal-Budget-Manager/static/css/main.7720f2fa.css",
+    "main.js": "/Personal-Budget-Manager/static/js/main.f69a60e8.js",
+    "index.html": "/Personal-Budget-Manager/index.html",
+    "main.7720f2fa.css.map": "/Personal-Budget-Manager/static/css/main.7720f2fa.css.map",
+    "main.f69a60e8.js.map": "/Personal-Budget-Manager/static/js/main.f69a60e8.js.map"
   },
   "entrypoints": [
     "static/css/main.7720f2fa.css",
