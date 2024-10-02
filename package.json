@@ -3,33 +3,28 @@
   "version": "1.0.0",
   "description": "The **Personal Budget Manager** is a simple React application that helps users track their expenses and manage their budgets. Users can add expenses, view them in a list, and see a summary of their spending by category in a pie chart. The app also allows setting budget limits for different categories and alerts users when they exceed their budget.",
   "main": "index.js",
+  "homepage": "https://M-Aloysie.github.io/Personal-Budget-Manager",
   "scripts": {
-    "test": "react-scripts test",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "eject": "react-scripts eject"
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "budget",
+    "finance",
+    "expenses",
+    "management"
+  ],
+  "author": "Your Name",
   "license": "ISC",
   "dependencies": {
     "chart.js": "^4.4.4",
     "react": "^18.3.1",
     "react-chartjs-2": "^5.2.0",
-    "react-dom": "^18.3.1",
-    "react-scripts": "^5.0.1"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
     "gh-pages": "^6.1.1"
