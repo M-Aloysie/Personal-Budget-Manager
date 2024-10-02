@@ -1,18 +1,20 @@
 import React from 'react';
 
-const ExpenseList = ({ expenses }) => {
+function ExpenseList({ expenses, deleteExpense, setCurrentExpense }) {
   return (
     <div>
-      <h2>Expenses</h2>
+      <h2>Expense List</h2>
       <ul>
-        {expenses.map((expense, index) => (
-          <li key={index}>
-            {expense.date} - {expense.category}: ${expense.amount}
+        {expenses.map((expense) => (
+          <li key={expense.id}>
+            <strong>{expense.title}</strong> - ${expense.amount} ({expense.category})
+            <button onClick={() => setCurrentExpense(expense)}>Edit</button>
+            <button onClick={() => deleteExpense(expense.id)}>Delete</button>
           </li>
         ))}
       </ul>
     </div>
   );
-};
+}
 
 export default ExpenseList;

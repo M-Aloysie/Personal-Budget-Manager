@@ -1,27 +1,206 @@
+/* App.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
+
 .App {
-    text-align: center;
-    margin: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+input, button {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f1f1f1;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+li strong {
+  font-size: 1.1rem;
+}
+
+li button {
+  background-color: #28a745;
+  margin-left: 10px;
+  padding: 5px 10px;
+}
+
+li button:first-child {
+  background-color: #007bff;
+}
+
+li button:last-child {
+  background-color: #dc3545;
+}
+
+li button:hover {
+  opacity: 0.9;
+}
+
+.chart-container {
+  margin: 30px 0;
+}
+
+.alert {
+  color: #ff0000;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.budget-limit {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.budget-limit input {
+  width: 150px;
+  text-align: center;
+}
+
+.budget-limit p {
+  font-size: 1.2rem;
+  color: #007bff;
+}
+
+/* RESPONSIVENESS */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .App {
+    padding: 10px;
   }
-  
+
   form {
-    margin-bottom: 20px;
+    gap: 10px;
   }
-  
-  input, select {
-    margin: 10px;
+
+  input, button {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .budget-limit input {
+    width: 120px;
+  }
+
+  li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  li button {
+    width: 100%;
+    margin: 5px 0 0 0;
+  }
+
+  li strong {
+    margin-bottom: 5px;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 480px) {
+  .App {
+    width: 100%;
+    margin: 0;
     padding: 5px;
+    box-shadow: none;
   }
-  
-  button {
-    padding: 5px 10px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+
+  h1 {
+    font-size: 1.5rem;
   }
-  
-  button:hover {
-    background-color: #0056b3;
+
+  input, button {
+    padding: 7px;
+    font-size: 0.8rem;
   }
-  
+
+  .budget-limit input {
+    width: 100px;
+  }
+
+  .chart-container {
+    margin: 20px 0;
+  }
+
+  li {
+    padding: 8px;
+    margin: 8px 0;
+  }
+
+  li button {
+    padding: 8px;
+    width: 100%;
+  }
+
+  li strong {
+    font-size: 1rem;
+  }
+}
